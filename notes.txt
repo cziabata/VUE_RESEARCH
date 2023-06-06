@@ -1,0 +1,12 @@
+- v-model - used for two-way binding (example - input+value)
+- {{ }} - used for interpolation, for text only
+- v-on:click=" " || @click - event handler
+- v-on:keydown.enter=" " - event handler with modificator
+- v-bind:key=" " || :key - directive for unique keys
+- <template></template> - use like Fragment in React, often used with v-if directive
+- :class - directive for conditional css class
+
+### structural directives ###
+
+- v-for=" " - used for array map, work like JS cycle 'for of'
+- v-if=" " - delete html element if expression falsy
