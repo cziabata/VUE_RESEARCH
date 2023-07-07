@@ -10,3 +10,16 @@
 
 - v-for=" " - used for array map, work like JS cycle 'for of'
 - v-if=" " - delete html element if expression falsy
+
+### lifecycle hooks
+
+- computed() - work like methods() but in this case Vue cached computed calls. Computed call when one of this.something 
+which using inside computed has changed. Computeds using like fields (without ()). In computed you cannot assign 
+component data (for example, from a data hook). A computed can be any expression that makes a calculation, does not 
+change the data, and the result of which is used in the template
+
+- data() - the date hook cannot contain fields that can be calculated based on the current state 
+(time code 38:00, lesson 17, Illya Klymov). 
+
+- watch() - used for logic that depends on the results of other parts of the component. Each watch behind 
+the scenes takes two parameters - prevValue, nextValue
